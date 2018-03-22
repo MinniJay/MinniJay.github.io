@@ -1,7 +1,367 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/Style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>mjinteractive</title>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div id="menu" class="fixed-action-btn">
+    <a class="btn-floating btn-large blue-grey darken-4 z-depth-5 wave-effect wave-light">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a href="#showcase" class="btn-floating red blue-grey darken-3"><i class="material-icons">home</i></a></li>
+      <li><a href="#section-a" class="btn-floating blue-grey darken-3"><i class="material-icons">code</i></a></li>
+      <li><a href="#section-b" class="btn-floating green blue-grey darken-3"><i class="material-icons">code</i></a></li>
+      <li><a href="#section-c" class="btn-floating blue blue-grey darken-3"><i class="material-icons">code</i></a></li>
+    </ul>
+  </div>
+
+  <ul id="slide-out" class="side-nav" style="transform: translateX(-100%);">
+    <li>
+      <div class="user-view col s12">
+        <div class="background z-depth-2">
+          <div class="material-placeholder"><img class="materialboxed initialized" src="../img/creativity.jpeg"></div>
+        </div>
+        <a class="white-text"><i class="medium material-icons">account_circle</i></a>
+      </div>
+    </li>
+    <li>
+      <div>
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">code</i>First</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">code</i>Second</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">code</i>Third</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+
+  <div id="modal" class="modal bottom-sheet modal-color" style="z-index: 1003;">
+    <div class="modal-content">
+      <div class="col s12">
+        <div class="row col s12">
+          <div class="col s4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../img/ideas.jpeg">
+                    <a class="btn-floating halfway-fab waves-effect waves-light blue-grey darken-4"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, minima nisi aliquid vel officia quos voluptate repudiandae suscipit repellendus id.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../img/section-a.jpeg">
+                    <a class="btn-floating halfway-fab waves-effect waves-light blue-grey darken-4"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima temporibus consequuntur, velit ex cum saepe aut! Hic earum dolorem, ducimus!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="row">
+              <div class="col s12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../img/creativity.jpeg">
+                    <a class="btn-floating halfway-fab waves-effect waves-light blue-grey darken-4"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est deserunt quos odio eligendi accusantium dolorem fugit natus qui blanditiis voluptatum?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer blue-grey darken-4">
+
+    </div>
+  </div>
+
+
+  <div id="showcase">
+    <div id="showcase-overlay">
+      <div id="showcase-text" class="showcase-text">
+        <h1>MinniJay Interactives</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nesciunt illum aut labore delectus cumque enim laborum nemo qui perferendis, ad, sunt error sint? Veritatis dolores incidunt repellat sint vero natus facilis consequatur hic, accusamus
+          quaerat itaque, ut repellendus, corporis.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section A-->
+  <div class="section-a" id="section-a">
+    <div class="section-a-overlay">
+      <!-- Section A form-->
+      <div class="section-a-img hide-on-med-and-down">
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate tooltipped" data-position="top" data-delay="100" data-tooltip="Add an Input" data-tooltip-id="ce01c57c-bd82-f036-e756-6d60fbb82584">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate tooltipped" data-position="right" data-delay="100" data-tooltip="or even Two" data-tooltip-id="3f028626-afd2-fd06-c6ad-5a695b2947fc">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row input-field col s12 tooltipped" data-position="buttom" data-delay="100" data-tooltip="What about a dropdown" data-tooltip-id="fd3ac899-8642-772a-10d8-815009648e34">
+              <div class="select-wrapper"><span class="caret">▼</span><input type="text" class="select-dropdown" readonly="true" data-activates="select-options-b90f6314-0632-d556-6df4-c7afc5b7ead1" value="Gender">
+                <ul id="select-options-b90f6314-0632-d556-6df4-c7afc5b7ead1" class="dropdown-content select-dropdown ">
+                  <li class="disabled "><span>Gender</span></li>
+                  <li class=""><span>Male</span></li>
+                  <li class=""><span>Female</span></li>
+                </ul><select id="gender" class="initialized" data-select-id="b90f6314-0632-d556-6df4-c7afc5b7ead1">
+                  <option value="" disabled="" selected="">Gender</option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+              </select></div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate tooltipped" data-position="top" data-delay="100" data-tooltip="Keep some a secret" data-tooltip-id="04c31e7d-ddd4-8d5f-ff82-3a321f06ab78">
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate tooltipped" data-position="buttom" data-delay="100" data-tooltip="And others validated, go on try it" data-tooltip-id="b226f26e-b726-7378-8c8b-512285da129f">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row input-field col s12">
+              <a class="btn waves-effect waves-light blue-grey darken-4 tooltipped" data-position="top" data-delay="100" data-tooltip="Done? perfect send it" data-tooltip-id="4648a4cd-7050-2ec2-ee05-bbb35ba147c7">Register<i class="material-icons left">send</i></a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Section A form End-->
+      </div>
+      <div class="section-a-text">
+        <h1>User Interfaces</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptatibus doloribus aut illo minima consectetur minus eligendi quod porro. Autem optio, obcaecati ullam delectus iure corporis, debitis neque fugiat minus, non numquam consequuntur
+          ab eius! Velit ullam odio, dicta voluptatem.</p>
+        <a href="../subpages/UI.html" class="cstmbtn" target="blank">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section A end-->
+
+  <!-- Section B-->
+
+  <div class="section-b" id="section-b">
+    <div class="section-b-overlay">
+      <div class="section-b-text">
+        <h1>User Interactions</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptatibus doloribus aut illo minima consectetur minus eligendi quod porro. Autem optio, obcaecati ullam delectus iure corporis, debitis neque fugiat minus, non numquam consequuntur
+          ab eius! Velit ullam odio, dicta voluptatem.</p>
+        <a href="#section-c" class="cstmbtn" target="blank">Read More</a>
+      </div>
+      <div class="section-b-img hide-on-med-and-down">
+        <div class="col s12">
+          <div class="row">
+            <div class="col s12">
+              <a href="#" data-activates="slide-out" class="button-collapse btn tooltipped" data-position="top" data-delay="100" data-tooltip="What about adding a Side Navigator" data-tooltip-id="0169e809-b3c8-51ea-529d-5c9e611c245a">Side Navigator</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <a class="waves-effect waves-light btn modal-trigger tooltipped" href=".modal" data-position="top" data-delay="100" data-tooltip="What about something from below" data-tooltip-id="617a1427-2964-bd00-7ebf-29597b9cad9b">Bottom Sheet</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-c" id="section-c">
+    <div class="section-c-overlay">
+      <div class="section-c-img hide-on-med-and-down">
+
+      </div>
+      <div class="section-c-text">
+        <h1>Website Designs</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptatibus doloribus aut illo minima consectetur minus eligendi quod porro. Autem optio, obcaecati ullam delectus iure corporis, debitis neque fugiat minus, non numquam consequuntur
+          ab eius! Velit ullam odio, dicta voluptatem.</p>
+        <a href="#contact" class="cstmbtn" target="blank">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="../Css/scrollreveal.min.js">
+  </script>
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.showcase-text', {
+      duration: 2000,
+      origin: 'right',
+      distance: '200px'
+    });
+
+    sr.reveal('.section-a-text', {
+      duration: 2000,
+      origin: 'left',
+      distance: '200px',
+      viewFactor: 1
+    });
+
+    sr.reveal('.section-b-text', {
+      duration: 2000,
+      origin: 'right',
+      distance: '200px',
+      viewFactor: 1
+    });
+
+    sr.reveal('.section-c-text', {
+      duration: 2000,
+      origin: 'left',
+      distance: '200px',
+      viewFactor: 1
+    });
+
+    sr.reveal('.section-a-img', {
+      duration: 1000,
+      origin: 'left',
+      delay: 1000,
+      viewFactor: 1
+    });
+
+    sr.reveal('.section-b-img', {
+      duration: 1000,
+      origin: 'right',
+      delay: 1000,
+      viewFactor: 1
+    });
+
+    sr.reveal('.section-c-img', {
+      duration: 1000,
+      origin: 'left',
+      delay: 1000,
+      viewFactor: 1
+    });
+  </script>
+
+  <script>
+    $(function() {
+      // Smooth Scrolling
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $('select').material_select();
+
+      $(".button-collapse").sideNav();
+    });
+
+    $(document).ready(function() {
+      $('.modal').modal();
+
+      $(document).ready(function() {
+        $('.collapsible').collapsible();
+      });
+    });
+  </script>
+
+
+  <script>
+    var options = [{
+        selector: '.section-b-text',
+        offset: 200,
+        callback: function(el) {
+          Materialize.toast("Add Interactive Elements to your Webstite!", 4000);
+        }
+      },
+      {
+        selector: '.section-b-text',
+        offset: 400,
+        callback: function(el) {
+          Materialize.toast("Try swiping me away", 4000);
+        }
+      },
+    ];
+    Materialize.scrollFire(options);
+  </script>
+
+  <div style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_mjinteractive&amp;utm_content=footer_img"><img src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div>
+
+
+  <div class="material-tooltip" id="ce01c57c-bd82-f036-e756-6d60fbb82584"><span>Add an Input</span>
+    <div class="backdrop"></div>
+  </div>
+  <div class="material-tooltip" id="3f028626-afd2-fd06-c6ad-5a695b2947fc"><span>or even Two</span>
+    <div class="backdrop"></div>
+  </div>
+  <div class="material-tooltip" id="fd3ac899-8642-772a-10d8-815009648e34"><span>What about a dropdown</span>
+    <div class="backdrop"></div>
+  </div>
+  <div class="material-tooltip" id="04c31e7d-ddd4-8d5f-ff82-3a321f06ab78"><span>Keep some a secret</span>
+    <div class="backdrop"></div>
+  </div>
+  <div class="material-tooltip" id="b226f26e-b726-7378-8c8b-512285da129f"><span>And others validated, go on try it</span>
+    <div class="backdrop"></div>
+  </div>
+  <div class="material-tooltip" id="4648a4cd-7050-2ec2-ee05-bbb35ba147c7"><span>Done? perfect send it</span>
+    <div class="backdrop"></div>
+  </div>
+  <div class="material-tooltip" id="0169e809-b3c8-51ea-529d-5c9e611c245a"><span>What about adding a Side Navigator</span>
+    <div class="backdrop"></div>
+  </div>
+  <div class="material-tooltip" id="617a1427-2964-bd00-7ebf-29597b9cad9b"><span>What about something from below</span>
+    <div class="backdrop"></div>
+  </div>
+  <div class="hiddendiv common"></div>
+  <div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
 </body>
 </html>
