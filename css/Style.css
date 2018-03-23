@@ -1,52 +1,72 @@
-body{
+body {
   background-color: black;
 }
+
 .no_shadow {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
   -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0);
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   position: absolute;
 }
 
 .parallax-container {
-      height: 100vh;
-    }
+  height: 100vh;
+}
 
-.logo{
+.logo {
   height: 10%;
   width: 10%;
   opacity: 0.5;
   padding-top: 2.5rem;
 }
 
-.showcase-overlay{
+.showcase-overlay {
   height: 100vh;
   width: 100%;
-  background-color: rgba(36, 46, 48,0.8);
+  background-color: rgba(36, 46, 48, 0.8);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.showcase{
+.showcase {
   height: 100vh;
   width: 100%;
-  background-image:url("../img/c.jpeg");
+  background-image: url("../img/c.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   overflow-y: hidden;
 }
 
-.showcase-text{
+.showcase-text {
   color: white;
   text-align: center;
   width: 100%;
 }
 
-.showcase-aboutme{
+.showcase-aboutme {
   color: white;
   text-align: center;
   width: 100%;
+}
+
+.showcase-overlay-b {
+  height: 50vh;
+  width: 100%;
+  background-color: rgba(38, 50, 56, 0.8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.showcase-b {
+  height: 50vh;
+  width: 100%;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden;
 }
