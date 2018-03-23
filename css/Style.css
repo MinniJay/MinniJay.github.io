@@ -1,0 +1,144 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.full-viewport-height{
+  height: 100vh;
+}
+
+#showcase-a {
+  background-image: url('../img/showcase.jpeg');
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#showcase-overlay-a {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-row: 4;
+}
+
+#showcase-text-a {
+  grid-column: 2/4;
+  align-self: center;
+  color: white;
+  font-size: 1.5em;
+}
+
+#showcase-b {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#showcase-overlay-b {
+  background-color: rgba(0, 0, 0, 0.0);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-row: 4;
+}
+
+#showcase-text-b {
+  grid-column: 2/4;
+  align-self: center;
+  color: white;
+  font-size: 1.5em;
+}
+
+#article-a {
+  background-image: url('../img/a.jpeg');
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#article-b {
+  background-image: url('../img/b.jpeg');
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#article-c {
+  background-image: url('../img/c.jpeg');
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#article-d {
+  background-image: url('../img/d.jpeg');
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#article-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-row: 4;
+}
+
+#article-text {
+  grid-column: 2/4;
+  align-self: center;
+  color: white;
+  font-size: 1.5em;
+}
+
+.offers{
+  background-image: url('../img/offers.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.half-viewport-height{
+  height: 100%;
+}
+
+.offers-overlay{
+  background-color: rgba(0,0,0,0.8);
+  height: 100%;
+  width: 100%;
+}
+
+  .card-margin{
+    padding-top: 3%;
+  }
+
+  .transparent-teal{
+    background-color: rgba(255, 0, 0, 0.2);
+  }
