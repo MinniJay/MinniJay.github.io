@@ -1,6 +1,6 @@
 body {
     background-color: rgb(16, 21, 32);
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 
 @media screen and (min-width: 700px) {
@@ -37,9 +37,9 @@ body {
 
   .profile-pic{
     height: 100vh;
-    width: 100%;
+    width: 100vh;
     background-image: url('../img/profile.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
