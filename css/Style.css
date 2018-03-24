@@ -1,72 +1,155 @@
 body {
-  background-color: black;
+    background-color: rgb(16, 21, 32);
+    overflow-x: hidden;
 }
 
-.no_shadow {
-  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
-  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0);
-  background: rgba(0, 0, 0, 0);
-  position: absolute;
+@media screen and (min-width: 700px) {
+  .no_shadow {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+  }
+
+  .logo {
+    height: 10%;
+    width: 10%;
+    padding-top: 2.5rem;
+  }
+
+  .landingpage-parallax{
+    background-image: url("../img/c.jpeg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .profile{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(16, 21, 32);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .profile-pic{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/profile.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .showcase-b-parallax{
+    background-image: url("../img/d.png");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .showcase-c-parallax{
+    background-image: url("../img/e.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .showcase-d-parallax{
+    background-image: url("../img/c.jpeg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .slider .indicators .indicator-item.active{
+    background-color: rgba(0, 204, 180,1);
+  }
+
+  .showcase-overlay {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(16, 21, 32, 0.6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .showcase-overlay-b {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(16, 21, 32, 0.4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .showcase {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/c.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+  }
+
+  .showcase-text {
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  .showcase-text-b{
+    position:relative;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+
+.showcase-text-b span{
+  width: 20vw;
+  position: relative;
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 2vw;
+  letter-spacing: 10px;
+  font-weight: bolder;
 }
 
-.parallax-container {
-  height: 100vh;
+  .showcase-aboutme {
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  .showcase-text h1{
+    font-size: 4vw;
+  }
+
+  .showcase-b{
+    height: 25vh;
+    width: 100%;
+    background-color: rgb(19, 41, 55);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+  }
 }
 
-.logo {
-  height: 10%;
-  width: 10%;
-  opacity: 0.5;
-  padding-top: 2.5rem;
-}
-
-.showcase-overlay {
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(36, 46, 48, 0.8);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.showcase {
-  height: 100vh;
-  width: 100%;
-  background-image: url("../img/c.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow-y: hidden;
-}
-
-.showcase-text {
-  color: white;
-  text-align: center;
-  width: 100%;
-}
-
-.showcase-aboutme {
-  color: white;
-  text-align: center;
-  width: 100%;
-}
-
-.showcase-overlay-b {
-  height: 50vh;
-  width: 100%;
-  background-color: rgba(38, 50, 56, 0.8);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.showcase-b {
-  height: 50vh;
-  width: 100%;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow-y: hidden;
+@media screen and (max-width: 700px) {
+    body {
+        background-color: pink;
+    }
 }
